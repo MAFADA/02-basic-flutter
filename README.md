@@ -95,4 +95,4 @@ A new Flutter project
 ![](screenshot/gridview.png)
 
 ## TUGAS Minggu 2
-![Screenshot Tugas Minggu 2]()
+![Screenshot Tugas Minggu 2](screenshot/tugas.png)

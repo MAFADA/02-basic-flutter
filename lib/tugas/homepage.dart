@@ -30,7 +30,7 @@ class HomePageView extends StatelessWidget {
                       ),
                       onPressed: () {},
                       child: const Text(
-                        "Berita Terbaru",
+                        "BERITA TERBARU",
                         style: TextStyle(
                           color: Colors.black,
                           fontSize: 20,
@@ -48,7 +48,7 @@ class HomePageView extends StatelessWidget {
                       ),
                       onPressed: () {},
                       child: const Text(
-                        "Berita Terbaru",
+                        "PERTANDINGAN HARI INI",
                         style: TextStyle(color: Colors.black, fontSize: 20),
                       ),
                     ),
@@ -58,31 +58,10 @@ class HomePageView extends StatelessWidget {
             ),
             Container(
               color: Colors.red,
-              alignment: Alignment.topLeft,
-              child: Row(
-                children: const <Widget>[
-                  Expanded(
-                    child: Image(
-                      image: AssetImage('images/messi.jpg'),
-                    ),
-                  ),
-                  Expanded(
-                    child: Image(
-                      image: AssetImage('images/ronaldo.jpg'),
-                    ),
-                  ),
-                  Expanded(
-                    child: Image(
-                      image: AssetImage('images/neymar.png'),
-                    ),
-                  ),
-                  Expanded(
-                    child: Image(
-                      image: AssetImage('images/david.jpg'),
-                    ),
-                  ),
-                ],
-              ),
+              // alignment: Alignment.topLeft,
+              child: const Image(
+                  image: NetworkImage(
+                      'https://pict-a.sindonews.net/dyn/620/content/2020/02/12/11/1524916/lima-pesepak-bola-yang-terkenal-dermawan-iYy-thumb.jpg')),
               height: 400.0,
               width: 300.0,
             ),
@@ -115,12 +94,13 @@ class HomePageView extends StatelessWidget {
                     child: Image(
                       alignment: Alignment.center,
                       height: 200.0,
-                      image: AssetImage('images/messi.jpg'),
+                      image: NetworkImage(
+                          'https://pict.sindonews.net/dyn/620/sindopict/2020/02/12/dermawan_1.jpg'),
                     ),
                   ),
                   Expanded(
                     child: Text(
-                      'Messi',
+                      'Kylian Mbappe',
                       textAlign: TextAlign.center,
                       style: TextStyle(color: Colors.white),
                     ),
@@ -140,12 +120,13 @@ class HomePageView extends StatelessWidget {
                     child: Image(
                       alignment: Alignment.center,
                       height: 200.0,
-                      image: AssetImage('images/ronaldo.jpg'),
+                      image: NetworkImage(
+                          'https://pict-b.sindonews.net/dyn/620/sindopict/2020/02/12/dermawan_2.jpg'),
                     ),
                   ),
                   Expanded(
                     child: Text(
-                      'Ronaldo',
+                      'Lionel Messi',
                       textAlign: TextAlign.center,
                       style: TextStyle(color: Colors.white),
                     ),
@@ -165,12 +146,13 @@ class HomePageView extends StatelessWidget {
                     child: Image(
                       alignment: Alignment.center,
                       height: 200.0,
-                      image: AssetImage('images/neymar.png'),
+                      image: NetworkImage(
+                          'https://pict-c.sindonews.net/dyn/620/sindopict/2020/02/12/dermawan_4.jpg'),
                     ),
                   ),
                   Expanded(
                     child: Text(
-                      'Neymar',
+                      'Mohamed Salah',
                       textAlign: TextAlign.center,
                       style: TextStyle(color: Colors.white),
                     ),
@@ -190,12 +172,39 @@ class HomePageView extends StatelessWidget {
                     child: Image(
                       alignment: Alignment.center,
                       height: 200.0,
-                      image: AssetImage('images/david.jpg'),
+                      image: NetworkImage(
+                          'https://pict-a.sindonews.net/dyn/620/sindopict/2020/02/12/dermawan_5.jpg'),
                     ),
                   ),
                   Expanded(
                     child: Text(
-                      'David',
+                      'Mesut Ozil',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  ),
+                ],
+              ),
+              height: 200.0,
+            ),
+            Container(
+              color: Colors.red,
+              alignment: Alignment.topLeft,
+              margin: const EdgeInsets.only(top: 15),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: const <Widget>[
+                  Expanded(
+                    child: Image(
+                      alignment: Alignment.center,
+                      height: 200.0,
+                      image: NetworkImage(
+                          'https://pbs.twimg.com/media/FGWjelYXIA4oc_E.jpg'),
+                    ),
+                  ),
+                  Expanded(
+                    child: Text(
+                      'Cristiano Ronaldo',
                       textAlign: TextAlign.center,
                       style: TextStyle(color: Colors.white),
                     ),
