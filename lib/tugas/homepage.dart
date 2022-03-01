@@ -1,3 +1,5 @@
+//NIM: 2031710168
+//Nama: M. Afada Nur Saiva Syahira
 import 'package:flutter/material.dart';
 
 class HomePageView extends StatelessWidget {
